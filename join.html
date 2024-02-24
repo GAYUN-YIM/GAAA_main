@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>join</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="GAAA_style.css">
+<script type="text/javascript">
+    function skip_ad() {
+        document.getElementById("ad").innerHTML = 
+            "<span>skip완료, 더 이상 광고가 표시되지 않습니다.</span>";
+        }
+</script>
+</head>
+
+<body>
+    <header>
+        <a id="logo" href="GAAA_main.html"> GAAA </a>
+        <span  style="padding: 30px 10px;">
+            <span id="online">[#온라인 소품샵] </span>
+            <em id="intro">Since 2022, GAAA online prop shop</em>
+        </span>
+    </header>
+    <hr>
+
+<article>
+<button onclick="skip_ad();">skip</button>
+<span id="ad">(광고배너) skip하려면 버튼을 누르세요.</span>
+<br>
+<h3>회원가입</h3>
+<table>
+    <tr>
+    <td>이름(필수): </td><td><input type="text" size="4"/></td>
+    </tr>
+    <tr>
+    <td>나이(필수): </td><td><input type="text" size="2"/>세</td>
+    </tr>
+    <tr>
+    <td>전화번호(필수): </td><td><input type="tel" value="010-1234-5678"/></td>
+    </tr>
+    <tr>
+    <td>키(선택): </td><td><input type="text" size="2"/>(cm)</td>
+    </tr>
+    <tr>
+    <td>몸무게(선택): <td><input type="text" size="2"/>(kg)</td>
+    </tr>
+    <tr>
+    <td>주소: </td><td><input type="text" size="60"></td>
+</table>
+<button>완료하기</button>
+
+</article>
+
+</body>
+</html>
+

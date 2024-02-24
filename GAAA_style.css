@@ -1,0 +1,17 @@
+/* GAAA css파일*/
+
+#logo {color: pink; font-style: italic; font-size: 50pt; font-weight: 900; text-decoration-line: none;}
+#online {color:pink; font-size:20pt;}
+#login {color:pink; display: inline; text-align: right;}
+#join {display: inline; text-align: right;}
+#intro {float:right; color: gray;}
+a:link {color: gray;}
+a:visited{color: black;}
+p a{padding: 5px; margin:5px}
+#list_bt {background-color:pink; height:30px;}
+#mainimage {display:block; margin: 0 auto;}
+footer {text-align: right; font-size:8px; font-color:gray; margin:5px; padding:10px;}
+nav p strong {font-weight:bold; font-size:18px; font-style:italic;}
+table {margin-left: auto; margin-right: auto;}
+#listinfo{margin-left: 30px; font-style: italic; color: gray; font-size: 10pt;}
+.order{text-decoration-line:none;}

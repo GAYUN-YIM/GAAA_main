@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>order</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="GAAA_style.css">
+<script type="text/javascript">
+    function skip_ad() {
+        document.getElementById("ad").innerHTML = 
+            "<span>skip완료, 더 이상 광고가 표시되지 않습니다.</span>";
+        }
+
+    function total() {
+        var n1 = document.getElementById("uni").value;
+        var n2 = document.getElementById("pur").value;
+        var n3 = document.getElementById("mini").value;
+
+        var t1 = 6900*n1;
+        var t2 = 6900*n2;
+        var t3 = 32900*n3;
+        document.getElementById("unitotal").value = t1;
+        document.getElementById("purtotal").value = t2;
+        document.getElementById("minitotal").value = t3;
+
+        var totalnum = parseInt(n1) + parseInt(n2) + parseInt(n3);
+        document.getElementById("totalnum").value = totalnum;
+        var totalprice = t1+t2+t3;
+        document.getElementById("totalprice").value = totalprice;
+    }
+
+    function changeColor(id, color){
+        document.getElementById(id).style.background = color;
+    }
+</script>
+</head>
+<body>
+    <header>
+        <a id="logo" href="GAAA_main.html"> GAAA </a>
+        <span  style="padding: 30px 10px;">
+            <span id="online">[#온라인 소품샵] </span>
+            <em id="intro">Since 2022, GAAA online prop shop</em>
+        </span>
+    </header>
+    <hr>
+
+<article>
+<button onclick="skip_ad();">skip</button>
+<span id="ad">(광고배너) skip하려면 버튼을 누르세요.</span>
+<br>
+<h3>주문서 작성하기</h3>
+<span>이벤트리뷰 사은품 색상선택-></span>
+<button onclick="changeColor('colorc', 'blue');"> Blue(기본)</button>
+<button onclick="changeColor('colorc', 'red');"> Red</button>
+<button onclick="changeColor('colorc', 'yellow');"> Yellow</button>
+<div id=colorc style="background: blue; width: 100px; height:20px;"/>
+<br><br>
+
+<table border="1">
+    <tr> <th>상품명</th><th>가격</th><th>수량</th><th>합계</th></tr>
+    <tr> 
+    <td>universe</td><td>6,900원</td>
+    <td><input id="uni" type="text" size="2" value="0" onclick="this.select();" /></td>
+    <td> <input id="unitotal" type="text" size="6" value="0"/>원</td>
+    </tr>
+    <tr> 
+    <td>purgreen</td><td>6,900원</td>
+    <td><input id="pur" type="text" size="2" value="0" onclick="this.select();" /></td>
+    <td> <input id="purtotal" type="text" size="6" value="0"/>원</td>
+    </tr>
+    <tr> 
+    <td>minigold</td><td>32,900원</td>
+    <td><input id="mini" type="text" size="2" value="0" onclick="this.select();" /></td>
+    <td> <input id="minitotal" type="text" size="6" value="0"/>원</td>
+    </tr>
+    <tr>
+    <td>합계</td><td></td><td><input id="totalnum" type="text" size="2" value="0"/></td>
+    <td><input id="totalprice" type="text" size="6" value="0"/> 원</td>
+    </tr>
+</table>
+<input type="button" value="합계" onclick="total();"/>
+<button>주문하기</button>
+
+</article>
+
+</body>
+</html>
+
